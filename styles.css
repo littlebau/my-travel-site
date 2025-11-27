@@ -1,5 +1,5 @@
 /* ================================
-   🌴 峇厘島九日遊 - Q版可愛風格
+   🐕 峇厘島九日遊 - 柴犬可愛風格 - 跟林北出團
    ================================ */
 
 * {
@@ -9,23 +9,25 @@
 }
 
 :root {
-    /* Q版可愛配色 */
-    --primary-color: #FF9A8B;
-    --secondary-color: #FECFEF;
-    --accent-color: #FFD6A5;
-    --bg-light: #FFF8F3;
+    /* 柴犬配色 - 橘棕色系 */
+    --primary-color: #D97E4A;
+    --secondary-color: #F4A460;
+    --accent-color: #FFE4B5;
+    --bg-light: #FFF8F0;
     --bg-white: #FFFFFF;
-    --text-dark: #5D4E60;
-    --text-light: #8B7E8F;
-    --success-color: #A8E6CF;
+    --text-dark: #5D4037;
+    --text-light: #8D6E63;
+    --success-color: #A8D5BA;
     --info-color: #87CEEB;
-    --shadow: 0 8px 30px rgba(255, 154, 139, 0.15);
-    --shadow-hover: 0 12px 40px rgba(255, 154, 139, 0.25);
+    --shiba-orange: #D2691E;
+    --shiba-cream: #FAEBD7;
+    --shadow: 0 8px 30px rgba(217, 126, 74, 0.15);
+    --shadow-hover: 0 12px 40px rgba(217, 126, 74, 0.25);
 }
 
 body {
     font-family: 'Nunito', 'Microsoft JhengHei', sans-serif;
-    background: linear-gradient(135deg, #FFF8F3 0%, #FFE9F7 100%);
+    background: linear-gradient(135deg, #FFF8F0 0%, #FAEBD7 100%);
     color: var(--text-dark);
     line-height: 1.7;
     overflow-x: hidden;
@@ -38,13 +40,13 @@ body {
 }
 
 /* ================================
-   🎨 可愛導航列
+   🎨 柴犬可愛導航列
    ================================ */
 
 .cute-nav {
-    background: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 100%);
+    background: linear-gradient(135deg, #D97E4A 0%, #D2691E 100%);
     padding: 20px 0;
-    box-shadow: 0 4px 20px rgba(255, 106, 136, 0.3);
+    box-shadow: 0 4px 20px rgba(210, 105, 30, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -888,3 +890,39 @@ body {
         padding: 25px;
     }
 }
+
+/* ================================
+   🐕 柴犬特殊樣式
+   ================================ */
+
+.footer-brand {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--shiba-orange);
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 16px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* 柴犬跳跳動畫 */
+@keyframes shiba-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.deco {
+    animation: shiba-bounce 2s ease-in-out infinite;
+}
+
+.deco:nth-child(1) { animation-delay: 0s; }
+.deco:nth-child(2) { animation-delay: 0.2s; }
+.deco:nth-child(3) { animation-delay: 0.4s; }
+.deco:nth-child(4) { animation-delay: 0.6s; }
+.deco:nth-child(5) { animation-delay: 0.8s; }
+.deco:nth-child(6) { animation-delay: 1s; }
+.deco:nth-child(7) { animation-delay: 1.2s; }
