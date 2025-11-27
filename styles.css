@@ -816,14 +816,29 @@ body {
    ================================ */
 
 @media (max-width: 768px) {
+    .cute-nav {
+        padding: 10px 0;
+    }
+
     .nav-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 18px;
     }
 
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 
     .main-title {
@@ -873,6 +888,29 @@ body {
 }
 
 @media (max-width: 480px) {
+    .cute-nav {
+        padding: 8px 0;
+    }
+
+    .nav-content {
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 6px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
     .container {
         padding: 0 20px;
     }
