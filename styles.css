@@ -817,28 +817,38 @@ body {
 
 @media (max-width: 768px) {
     .cute-nav {
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     .nav-content {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         padding: 0 15px;
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 14px;
+        flex: 1;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 5px;
     }
 
     .nav-links a {
-        font-size: 12px;
-        padding: 6px 12px;
+        font-size: 20px;
+        padding: 5px 8px;
+        min-width: auto;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-emoji {
+        display: inline;
     }
 
     .main-title {
@@ -889,7 +899,7 @@ body {
 
 @media (max-width: 480px) {
     .cute-nav {
-        padding: 8px 0;
+        padding: 6px 0;
     }
 
     .nav-content {
@@ -898,17 +908,16 @@ body {
     }
 
     .logo {
-        font-size: 16px;
-        text-align: center;
+        font-size: 12px;
     }
 
     .nav-links {
-        gap: 6px;
+        gap: 4px;
     }
 
     .nav-links a {
-        font-size: 11px;
-        padding: 5px 10px;
+        font-size: 18px;
+        padding: 4px 6px;
     }
 
     .container {
